@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Origami.Me - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <style>
+    /* Light theme heading */
+    .main-h {
+      text-align: center;
+      padding: 40px 20px;
+      background:url('image/image8_e7912fc8-281a-4495-aa00-78e6855c944f_1200x1200.webp') no-repeat center center/cover;
+  
+    }
+    .main-h h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: url('image/image8_e7912fc8-281a-4495-aa00-78e6855c944f_1200x1200.webp') no-repeat center center/cover;
+      background: linear-gradient(90deg, #930505, #030102, #91292d);
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+    .main-h p {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    /* Navbar */
+    /* nav a {
+      margin-left:10%;
+      margin-right: 10%;
+      display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      float: left;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    } */  /* nav {
+      background-color: #1b1818;
+      overflow: hidden;
+    } */
+  
+      /* Navbar like index page */
+    nav {
+      background: linear-gradient(90deg, #ff4b2b, #ff416c);
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      margin: 0 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffe8e8;
+      transform: scale(1.1);
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .about-section h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    /* Blogs Section */
+    .blogs-section {
+      padding: 50px 20px;
+      background: #fafafa;
+    }
+    .blogs-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: bold;
+      color: #333;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    /* Footer */
+    footer {
+      background: #1b1818;
+      color: #ccc;
+      margin-top: 50px;
+    }
+    footer a {
+      color: #ff416c;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+    .footer-social i {
+      font-size: 1.3rem;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+    .footer-social i:hover {
+      transform: scale(1.2);
+      color: #ff416c;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+  <!-- Header -->
+  <div class="main-h">
+    <h1 class="brand-title">Origami.Me</h1>
+    <p class="brand-tagline">~ know when to fold ~</p>
+  </div>
+
+  <!-- Navbar (Centered like index) -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+    
+    <!-- Dropdowns -->
+    <!-- <div class="d mt-3 text-center">
+      <div class="btn-group">
+        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Paper Arts
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="origami.html">Origami Craft Store</a></li>
+          <li><a class="dropdown-item" href="#">Your Origami Photos</a></li>
+          <li><a class="dropdown-item" href="#">More Origami Stuff</a></li>
+          <li><a class="dropdown-item" href="#">Site Map</a></li>
+          <li><a class="dropdown-item" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Instructions
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">All</a></li>
+          <li><a class="dropdown-item" href="#">Boxes</a></li>
+          <li><a class="dropdown-item" href="#">Animal</a></li>
+          <li><a class="dropdown-item" href="#">Birds</a></li>
+          <li><a class="dropdown-item" href="#">Butterflies</a></li>
+          <li><a class="dropdown-item" href="#">Dinosaurs</a></li>
+          <li><a class="dropdown-item" href="#">Dollar Bill Origami</a></li>
+          <li><a class="dropdown-item" href="#">Modular Origami</a></li>
+          <li><a class="dropdown-item" href="#">Stars</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          For Kids
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Paper Crafts for Kids</a></li>
+          <li><a class="dropdown-item" href="#">Origami for Kids</a></li>
+          <li><a class="dropdown-item" href="#">Easy Origami Diagram</a></li>
+          <li><a class="dropdown-item" href="#">School Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Resources
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">History of Origami</a></li>
+          <li><a class="dropdown-item" href="#">Health Benefits</a></li>
+          <li><a class="dropdown-item" href="#">Educational Benefits</a></li>
+          <li><a class="dropdown-item" href="#">Origami Basics</a></li>
+          <li><a class="dropdown-item" href="#">Origami Tips</a></li>
+          <li><a class="dropdown-item" href="#">Origami Tools</a></li>
+          <li><a class="dropdown-item" href="#">Book Reviews</a></li>
+        </ul>
+      </div>
+    </div> -->
+
+ <div class="d-flex flex-wrap justify-content-center gap-3 p-3">
+    <div class="btn-group">
+      <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Paper Arts</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Origami Craft Store</a></li>
+        <li><a class="dropdown-item" href="#">Your Origami Photos</a></li>
+        <li><a class="dropdown-item" href="#">More Origami Stuff</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Instructions</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">All</a></li>
+        <li><a class="dropdown-item" href="#">Boxes</a></li>
+        <li><a class="dropdown-item" href="#">Animals</a></li>
+        <li><a class="dropdown-item" href="#">Birds</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">For Kids</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Paper Crafts for kids</a></li>
+        <li><a class="dropdown-item" href="#">Origami for kids</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+      <h2>About Origami.Me</h2>
+      <p>
+        Origami.Me is a creative space dedicated to the ancient Japanese art of paper folding. 
+        Our mission is to make origami accessible and enjoyable for everyone, whether you’re a 
+        beginner just starting your first fold or an experienced artist looking for inspiration.
+      </p>
+      <p>
+        Here, you’ll find detailed instructions, inspiring designs, and resources that explore 
+        the cultural, educational, and even health benefits of origami. We believe origami is 
+        more than just an art—it’s a way to improve focus, patience, and creativity.
+      </p>
+      <p>
+        From simple creations for kids to complex modular designs for experts, Origami.Me aims 
+        to be your go-to destination for all things origami.
+      </p>
+    </div>
+
+    <!-- Blogs Section -->
+    <div class="blogs-section">
+      <h2>Our Blogs</h2>
+      <div class="row g-4">
+        <!-- Blog 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="image/japanese-origami-unfolding-the-history-and-origin-the-global-wanderer.webp" class="card-img-top" alt="Blog Image 1">
+            <div class="card-body">
+              <h5 class="card-title">The History of Origami</h5>
+              <p class="card-text">Discover how origami evolved from ancient traditions into modern creativity.</p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="image/image8_e7912fc8-281a-4495-aa00-78e6855c944f_1200x1200.webp" class="card-img-top" alt="Blog Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Origami for Kids</h5>
+              <p class="card-text">Learn how origami boosts kids’ creativity and problem-solving skills.</p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="image/maxresdefault.jpg" class="card-img-top" alt="Blog Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Health Benefits of Origami</h5>
+              <p class="card-text">Folding paper reduces stress, improves focus, and encourages mindfulness.</p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 p-4">
+    <div class="footer-social mb-3">
+      <a href="#"><i class="fab fa-facebook text-white"></i></a>
+      <a href="#"><i class="fab fa-twitter text-white"></i></a>
+      <a href="#"><i class="fab fa-instagram text-white"></i></a>
+      <a href="#"><i class="fab fa-linkedin text-white"></i></a>
+    </div>
+    <p>© 2025 Origami.Me | Crafted with ❤️ for paper lovers</p>
+  </footer>
+</body>
+</html>
